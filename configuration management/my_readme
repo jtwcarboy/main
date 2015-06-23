@@ -1,0 +1,9 @@
+#script documentation
+put the list of your systems in /tmp/systems  These should be one column of ip's or hostnames (must be resolvable) 
+This is going to run as user jtw which we will have an ssh key pair setup so no password prompt occurs 
+use ssh-keygen to create a key before utilizing the script written,  Public key should be distributed across all systems
+Once you have your list of systemms in /tmp/systems then run the script.sh to deploy the new template file contents.
+
+The script reads the exit code and makes a file with a list of good / bad and counts them to the screen to show you failures
+(this part needed some more tuning because its reading only the success of the ssh command and not the commands ran on remote system)
+
