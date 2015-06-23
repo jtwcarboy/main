@@ -1,0 +1,4 @@
+This script runs as scraper.sh
+It runs in any path (you would need to adjust the path to the puppet log file ) so this should as written be run in the same directory as 
+the puppet log file.
+This script uses mostly greps to accomplish the tasks
